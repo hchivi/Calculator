@@ -46,6 +46,7 @@
             btnCong.TabIndex = 0;
             btnCong.Text = "+";
             btnCong.UseVisualStyleBackColor = true;
+            btnCong.Click += btnCong_Click;
             // 
             // label1
             // 
@@ -97,7 +98,6 @@
             label4.Size = new Size(101, 32);
             label4.TabIndex = 1;
             label4.Text = "Kết quả:";
-            label4.Click += this.label4_Click;
             // 
             // txtKQ
             // 
@@ -122,7 +122,7 @@
             Controls.Add(btnCong);
             Font = new Font("Segoe UI", 14F);
             ForeColor = Color.CornflowerBlue;
-            Margin = new Padding(5, 5, 5, 5);
+            Margin = new Padding(5);
             Name = "Form1";
             Text = "Tính toán ";
             ResumeLayout(false);
