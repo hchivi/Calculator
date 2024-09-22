@@ -36,6 +36,7 @@
             txtB = new TextBox();
             label4 = new Label();
             txtKQ = new TextBox();
+            btnTru = new Button();
             SuspendLayout();
             // 
             // btnCong
@@ -107,6 +108,16 @@
             txtKQ.TabIndex = 2;
             txtKQ.TextChanged += textBox3_TextChanged;
             // 
+            // btnTru
+            // 
+            btnTru.Location = new Point(213, 235);
+            btnTru.Name = "btnTru";
+            btnTru.Size = new Size(66, 38);
+            btnTru.TabIndex = 0;
+            btnTru.Text = "-";
+            btnTru.UseVisualStyleBackColor = true;
+            btnTru.Click += btnTru_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(13F, 31F);
@@ -119,6 +130,7 @@
             Controls.Add(txtA);
             Controls.Add(label2);
             Controls.Add(label1);
+            Controls.Add(btnTru);
             Controls.Add(btnCong);
             Font = new Font("Segoe UI", 14F);
             ForeColor = Color.CornflowerBlue;
@@ -139,5 +151,6 @@
         private TextBox txtB;
         private Label label4;
         private TextBox txtKQ;
+        private Button btnTru;
     }
 }
