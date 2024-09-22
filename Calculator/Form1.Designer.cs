@@ -28,12 +28,116 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            btnCong = new Button();
+            label1 = new Label();
+            txtA = new TextBox();
+            label2 = new Label();
+            label3 = new Label();
+            txtB = new TextBox();
+            label4 = new Label();
+            txtKQ = new TextBox();
+            SuspendLayout();
+            // 
+            // btnCong
+            // 
+            btnCong.Location = new Point(285, 235);
+            btnCong.Name = "btnCong";
+            btnCong.Size = new Size(66, 38);
+            btnCong.TabIndex = 0;
+            btnCong.Text = "+";
+            btnCong.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(167, 18);
+            label1.Name = "label1";
+            label1.Size = new Size(116, 32);
+            label1.TabIndex = 1;
+            label1.Text = "Tính toán";
+            label1.Click += label1_Click;
+            // 
+            // txtA
+            // 
+            txtA.Location = new Point(116, 76);
+            txtA.Name = "txtA";
+            txtA.Size = new Size(235, 39);
+            txtA.TabIndex = 2;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(41, 80);
+            label2.Name = "label2";
+            label2.Size = new Size(65, 32);
+            label2.TabIndex = 1;
+            label2.Text = "Số a:";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(41, 125);
+            label3.Name = "label3";
+            label3.Size = new Size(67, 32);
+            label3.TabIndex = 1;
+            label3.Text = "Số b:";
+            // 
+            // txtB
+            // 
+            txtB.Location = new Point(116, 121);
+            txtB.Name = "txtB";
+            txtB.Size = new Size(235, 39);
+            txtB.TabIndex = 2;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(7, 169);
+            label4.Name = "label4";
+            label4.Size = new Size(101, 32);
+            label4.TabIndex = 1;
+            label4.Text = "Kết quả:";
+            label4.Click += this.label4_Click;
+            // 
+            // txtKQ
+            // 
+            txtKQ.Location = new Point(116, 166);
+            txtKQ.Name = "txtKQ";
+            txtKQ.Size = new Size(235, 39);
+            txtKQ.TabIndex = 2;
+            txtKQ.TextChanged += textBox3_TextChanged;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(13F, 31F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(486, 306);
+            Controls.Add(txtKQ);
+            Controls.Add(label4);
+            Controls.Add(txtB);
+            Controls.Add(label3);
+            Controls.Add(txtA);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(btnCong);
+            Font = new Font("Segoe UI", 14F);
+            ForeColor = Color.CornflowerBlue;
+            Margin = new Padding(5, 5, 5, 5);
+            Name = "Form1";
+            Text = "Tính toán ";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Button btnCong;
+        private Label label1;
+        private TextBox txtA;
+        private Label label2;
+        private Label label3;
+        private TextBox txtB;
+        private Label label4;
+        private TextBox txtKQ;
     }
 }
